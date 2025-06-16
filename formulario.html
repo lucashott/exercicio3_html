@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deixe um comentário</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      color: #000;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 6px;
+      font-size: 1rem;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    small {
+      display: block;
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      background-color: #4b72c2;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3458a1;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Deixe um comentário</h1>
+
+  <form action="#" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="website">Website:</label>
+    <input type="text" id="website" name="website" />
+
+    <label for="comentario">Comentário:</label>
+    <textarea id="comentario" name="comentario" required></textarea>
+
+    <small>Observação: Seu comentário será publicado após passar pelo moderador</small>
+
+    <button type="submit">Enviar Comentário</button>
+  </form>
+
+</body>
+</html>
